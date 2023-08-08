@@ -1,0 +1,37 @@
+ALL SQL QUERIES USED IN THE PROJECT:
+
+create database bankdatabase;
+
+show databases;
+
+use bankdatabase;
+
+create table signup1(formno varchar(10), name varchar(30), gender varchar(10),dob varchar(50),username varchar(30),password varchar(20),number varchar(20),mail varchar(30),addresss varchar(40),state varchar(20),pinno varchar(10));
+
+select *from signup1;
+
+truncate table signup1;
+
+create table signup2(formno varchar(10), name varchar(30), username varchar(20), panno varchar(20),type varchar(20),cardno varchar(30),pinno varchar(10),services varchar(100));
+
+select *from signup2;
+
+truncate table signup2;
+
+create table login(formno varchar(10), name varchar(30), username varchar(20),password varchar(20),cardno varchar(30),pinno varchar(10));
+
+select *from login;
+
+truncate table login;
+
+create table balance(username varchar(20),balance varchar(20));
+
+select * from balance;
+
+truncate table balance;
+
+create table bank(username varchar(30), date varchar(100),type varchar(20),amount varchar(20));
+
+select *from bank;
+
+truncate table bank;
